@@ -29,13 +29,8 @@ tasks.test {
     testLogging {
         events("passed")
     }
-    finalizedBy(tasks.jacocoTestReport)
-
 }
 
-tasks.jacocoTestReport {
-    dependsOn(tasks.test) // tests are required to run before generating the report
-}
 
 application {
     // Define the main class for the application.
