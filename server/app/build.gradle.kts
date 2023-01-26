@@ -22,7 +22,10 @@ tasks.test {
         events("passed")
     }
     ignoreFailures = true
-    doLast {
+}
+
+tasks.register("retrieveProperties") {
+    doFirst {
         // Creates properties file
 
         val directoryPath = "build/reports/tests/test/classes"
@@ -33,6 +36,8 @@ tasks.test {
         // Regex already accounts for windows and unix
         val regex = "<tr>(\n|\r\n)<td class=\"(success|failures)\">(.+)</td>".toRegex()
 
+        var resultList = mutableListOf<String>()
+
         for (className in reportDirectory.list()) {
             val htmlFile = file("$directoryPath/$className").readText()
 
@@ -40,8 +45,8 @@ tasks.test {
                 it.groupValues[3]
             }
 
-            for (caseName in testCaseArray) {
-                println(caseName)
+            for (methodName in testCaseArray) {
+                resultList.add(className.split(".")[1] + "." + methodName)
             }
         }
     }
