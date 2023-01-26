@@ -14,6 +14,6 @@ public class CalculatorTest {
 
     @Test public void calculatorCanMultiplyBy2() {
         Calculator classUnderTest = new Calculator();
-        assertEquals(10, classUnderTest.multiplyBy2(5));
+        assertEquals(10, classUnderTest.multiplyBy2(4));
     }
 }

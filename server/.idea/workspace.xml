@@ -7,7 +7,6 @@
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/server/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/server/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/server/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/server/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
