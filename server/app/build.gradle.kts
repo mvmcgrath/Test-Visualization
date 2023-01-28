@@ -61,7 +61,7 @@ tasks.register("generateBat") {
         var textToWrite = ""
 
         for (methodName in resultList) {
-            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\nCALL cd app/build/reports/jacoco/test\r\nCALL ren html $methodName\r\nCALL cd ../../../../..\r\n"
+            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\nCALL cd build/reports/jacoco/test\r\nCALL ren html $methodName\r\nCALL cd ../../../../..\r\n"
         }
 
         batFile.writeText(textToWrite)
