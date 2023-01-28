@@ -24,7 +24,14 @@ tasks.test {
     ignoreFailures = true
 }
 
-tasks.register("retrieveProperties") {
+tasks.jacocoTestReport {
+    reports {
+        csv.required.set(true)
+        xml.required.set(true)
+    }
+}
+
+tasks.register("generateBat") {
     doFirst {
         // Creates properties file
 
@@ -49,6 +56,15 @@ tasks.register("retrieveProperties") {
                 resultList.add(className.split(".")[1] + "." + methodName)
             }
         }
+
+        val batFile = file("testReportGenerator.bat")
+        var textToWrite = ""
+
+        for (methodName in resultList) {
+            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\nCALL cd app/build/reports/jacoco/test\r\nCALL ren html $methodName\r\nCALL cd ../../../../..\r\n"
+        }
+
+        batFile.writeText(textToWrite)
     }
 }
 
