@@ -1,4 +1,4 @@
-# Test Visualization
+# 🧪 Test Visualization
 
 Test visualization is a full stack web application visualizes test case execution and debugging, utilizing Jacoco generated coverage reports.
 

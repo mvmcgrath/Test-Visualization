@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { useEffect, useState } from 'react'
+import reportService from './services/report'
 
 const BodyContainer = styled.div`
   display: flex;
@@ -9,9 +11,17 @@ const BodyContainer = styled.div`
 `
 
 const App = () => {
+  const [lineNumbers, setLineNumbers] = useState('')
+
+  useEffect(() => {
+    reportService.getReports().then(returnedReport => {
+      setLineNumbers(returnedReport)
+    })
+  }, [])
+
   return (
     <BodyContainer>
-      <p>Hi</p>
+      <p>{lineNumbers}</p>
     </BodyContainer>
   )
 }
