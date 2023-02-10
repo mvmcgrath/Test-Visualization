@@ -58,10 +58,10 @@ tasks.register("generateBat") {
         }
 
         val batFile = file("testReportGenerator.bat")
-        var textToWrite = ""
+        var textToWrite = "rmdir /S /Q \"build\\reports\\jacoco\\test\"\r\n"
 
         for (methodName in resultList) {
-            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\nCALL cd build/reports/jacoco/test\r\nCALL ren html $methodName\r\nCALL cd ../../../../..\r\n"
+            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\ncd build/reports/jacoco/test\r\nren html $methodName\r\ncd ../../../..\r\n"
         }
 
         batFile.writeText(textToWrite)
