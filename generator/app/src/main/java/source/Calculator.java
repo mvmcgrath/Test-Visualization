@@ -1,4 +1,4 @@
-package server;
+package source;
 
 public class Calculator {
     public int addition(int num1, int num2) {

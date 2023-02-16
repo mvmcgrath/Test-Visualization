@@ -22,17 +22,12 @@ tasks.test {
         events("passed")
     }
     ignoreFailures = true
-}
-
-tasks.jacocoTestReport {
-    reports {
-        csv.required.set(true)
-        xml.required.set(true)
-    }
+    finalizedBy("jacocoTestReport")
 }
 
 tasks.register("generateBat") {
-    doFirst {
+    dependsOn("test")
+    doLast {
         // Creates properties file
 
         val directoryPath = "build/reports/tests/test/classes"
@@ -61,7 +56,7 @@ tasks.register("generateBat") {
         var textToWrite = "rmdir /S /Q \"build\\reports\\jacoco\\test\"\r\n"
 
         for (methodName in resultList) {
-            textToWrite += "CALL gradle test --tests $methodName\r\nCALL gradle jacocoTestReport\r\ncd build/reports/jacoco/test\r\nren html $methodName\r\ncd ../../../..\r\n"
+            textToWrite += "CALL gradle test --tests $methodName\r\ncd build/reports/jacoco/test\r\nren html $methodName\r\ncd ../../../..\r\n"
         }
 
         batFile.writeText(textToWrite)
