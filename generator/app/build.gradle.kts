@@ -43,12 +43,14 @@ tasks.register("generateBat") {
         for (className in reportDirectory.list()) {
             val htmlFile = file("$directoryPath/$className").readText()
 
+            println("$directoryPath/$className")
+
             val testCaseArray = regex.findAll(htmlFile).map {
                 it.groupValues[3]
             }
 
             for (methodName in testCaseArray) {
-                resultList.add(className.split(".")[1] + "." + methodName)
+                resultList.add(className.split(".")[5] + "." + methodName)
             }
         }
 
