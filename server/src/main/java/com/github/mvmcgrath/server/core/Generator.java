@@ -75,4 +75,14 @@ public class Generator {
 
         return lineNumbers;
     }
+    //Generate Jacoco Reports
+    public void generateJacocoReports() {
+        try {
+            String[] commands = new String[]{"cmd", "/c", "cd ../generator && gradle generateBat && cd app && testReportGenerator.bat"};
+            Runtime.getRuntime().exec(commands).waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e);
+        }
+    }
 }
