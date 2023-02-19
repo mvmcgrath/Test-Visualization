@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../generator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controllers/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controllers/ReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.4ccb57bc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.4ccb57bc.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.4ccb57bc.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
