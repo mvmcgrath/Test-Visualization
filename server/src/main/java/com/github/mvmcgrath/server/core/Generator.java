@@ -81,8 +81,8 @@ public class Generator {
             String[] commands = new String[]{"cmd", "/c", "cd ../generator && gradle generateBat && cd app && testReportGenerator.bat"};
             Runtime.getRuntime().exec(commands).waitFor();
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
+                e.printStackTrace();
+                System.out.println(e);
         }
     }
 

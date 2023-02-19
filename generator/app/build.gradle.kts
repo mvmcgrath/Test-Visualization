@@ -63,6 +63,11 @@ tasks.register("generateBat") {
     }
 }
 
+//Temporary (hopefully)
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}
+
 
 application {
     // Define the main class for the application.
