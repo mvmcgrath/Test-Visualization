@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/AbacusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/AbacusTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btrace/BTraceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/BTraceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Kurobatto/Documents/Projects/Test-Visualization/generator/btrace",
+    "last_opened_file_path": "C:/Users/Kurobatto/Documents/Projects/GIS/gui",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -290,9 +290,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.generator [run]" />
+        <item itemvalue="Gradle.generator[test]" />
         <item itemvalue="Gradle.generator [build]" />
         <item itemvalue="Gradle.generator [generateBat]" />
-        <item itemvalue="Gradle.generator[test]" />
         <item itemvalue="Gradle.generator [newTestToTry]" />
       </list>
     </recent_temporary>

@@ -10,10 +10,10 @@ public class Calculator {
     }
 
     public int multiplyBy2IfEvenOr9(int num) {
-        if (num % 2 == 0 || num == 9) {
-            return multiplyBy2(num);
-        } else {
-            return -1;
+        int returnValue = -1;
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Go");
         }
+        return returnValue;
     }
 }

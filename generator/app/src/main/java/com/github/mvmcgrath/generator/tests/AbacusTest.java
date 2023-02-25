@@ -11,4 +11,10 @@ public class AbacusTest {
         Abacus classUnderTest = new Abacus();
         assertEquals(2, classUnderTest.count(1));
     }
+
+    @Test
+    public void abacusCanDoubleCount() {
+        Abacus classUnderTest = new Abacus();
+        assertEquals(4, classUnderTest.countDouble(2));
+    }
 }
