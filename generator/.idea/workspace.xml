@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/AbacusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/AbacusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/BTraceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/BTraceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="generator" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -117,6 +113,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/build.gradle.kts" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -133,18 +132,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Kurobatto/Documents/Projects/GIS/gui",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kurobatto/Documents/Projects/Test-Visualization/generator&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kurobatto\Documents\Projects\Test-Visualization\generator\btrace" />
@@ -154,7 +153,7 @@
       <recent name="server" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.generator [run]">
+  <component name="RunManager" selected="Gradle.generator [generateBat]">
     <configuration name="generator [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,18 +196,18 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="generator [newTestToTry]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="generator [help]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="newTestToTry" />
+            <option value="help" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,6 +229,52 @@
         <option name="taskNames">
           <list>
             <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="generator [wrapper] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.0.1" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="generator [wrapper]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.0.1" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -280,20 +325,22 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.generator [help]" />
+      <item itemvalue="Gradle.generator [wrapper]" />
+      <item itemvalue="Gradle.generator" />
+      <item itemvalue="Gradle.generator [wrapper] (1)" />
       <item itemvalue="Gradle.generator [build]" />
-      <item itemvalue="Gradle.generator [newTestToTry]" />
       <item itemvalue="Gradle.generator [generateBat]" />
       <item itemvalue="Gradle.generator [run]" />
-      <item itemvalue="Gradle.generator" />
       <item itemvalue="Gradle.generator[test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.generator [generateBat]" />
+        <item itemvalue="Gradle.generator [wrapper] (1)" />
         <item itemvalue="Gradle.generator [run]" />
         <item itemvalue="Gradle.generator[test]" />
         <item itemvalue="Gradle.generator [build]" />
-        <item itemvalue="Gradle.generator [generateBat]" />
-        <item itemvalue="Gradle.generator [newTestToTry]" />
       </list>
     </recent_temporary>
   </component>

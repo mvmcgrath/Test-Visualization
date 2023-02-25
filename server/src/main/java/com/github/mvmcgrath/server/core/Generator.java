@@ -78,8 +78,10 @@ public class Generator {
     //Generate Jacoco Reports
     public void generateJacocoReports() {
         try {
-            String[] commands = new String[]{"cmd", "/c", "cd ../generator && gradle generateBat && cd app && testReportGenerator.bat"};
-            Runtime.getRuntime().exec(commands).waitFor();
+            String[] generateCommands = new String[]{"cmd", "/c", "cd ../generator && gradle generateBat"};
+            Runtime.getRuntime().exec(generateCommands).waitFor();
+            String[] batCommands = new String[]{"cmd", "/c", "cd ../generator/app && testReportGenerator.bat"};
+            Runtime.getRuntime().exec(batCommands).waitFor();
         } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println(e);
