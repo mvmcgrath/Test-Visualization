@@ -2,6 +2,8 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
     jacoco
+    java
+    id("com.github.johnrengelman.shadow") version "8.0.0"
 }
 
 repositories {
@@ -66,6 +68,19 @@ tasks.register("generateBat") {
 //Temporary (hopefully)
 tasks.named<JavaExec>("run") {
     standardInput = System.`in`
+}
+
+tasks.shadowJar {
+    finalizedBy("copyShadowJar")
+}
+
+tasks.register<Copy>("copyShadowJar") {
+    from(file("build/libs/app-all.jar"))
+    into(file("../btrace/config"))
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.compilerArgs = listOf("-g")
 }
 
 

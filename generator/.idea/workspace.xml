@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/BTraceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/config/BTraceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracer.bat" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracer.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,56 +48,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="generator" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="generator" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -149,32 +103,14 @@
       <recent name="C:\Users\Kurobatto\Documents\Projects\Test-Visualization\generator\btrace" />
       <recent name="C:\Users\Kurobatto\Documents\Projects\Test-Visualization\generator\app\src\main\java\com\github\mvmcgrath\generator\tests" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kurobatto\Documents\Projects\Test-Visualization\generator\btrace\config" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="server" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.generator [generateBat]">
-    <configuration name="generator [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.generator [shadowJar]">
     <configuration name="generator [generateBat]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -229,6 +165,27 @@
         <option name="taskNames">
           <list>
             <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="generator [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -328,19 +285,19 @@
       <item itemvalue="Gradle.generator [help]" />
       <item itemvalue="Gradle.generator [wrapper]" />
       <item itemvalue="Gradle.generator" />
+      <item itemvalue="Gradle.generator [shadowJar]" />
       <item itemvalue="Gradle.generator [wrapper] (1)" />
-      <item itemvalue="Gradle.generator [build]" />
       <item itemvalue="Gradle.generator [generateBat]" />
       <item itemvalue="Gradle.generator [run]" />
       <item itemvalue="Gradle.generator[test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.generator [shadowJar]" />
         <item itemvalue="Gradle.generator [generateBat]" />
         <item itemvalue="Gradle.generator [wrapper] (1)" />
         <item itemvalue="Gradle.generator [run]" />
         <item itemvalue="Gradle.generator[test]" />
-        <item itemvalue="Gradle.generator [build]" />
       </list>
     </recent_temporary>
   </component>

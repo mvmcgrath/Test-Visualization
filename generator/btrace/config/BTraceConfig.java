@@ -7,7 +7,7 @@ import static org.openjdk.btrace.core.BTraceUtils.*;
             clazz="/com\\.github\\.mvmcgrath\\.generator\\.source\\..*/",
             method="/.*/",
             location=@Location(value = Kind.LINE,
-                line = -1
+                line = 19
             )
     )
     public static void calcLine3(@ProbeClassName String probeClass, int line) {
