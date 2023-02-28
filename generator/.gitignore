@@ -5,3 +5,6 @@
 build
 testReportGenerator.sh
 btrace/samples
+btrace/bin
+btrace/config/results
+btrace/config/app-all.jar

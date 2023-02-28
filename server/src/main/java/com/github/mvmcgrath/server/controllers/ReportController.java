@@ -15,20 +15,20 @@ public class ReportController {
 
     @GetMapping("/reports")
     public String getAllReports() {
-        Generator generator = new Generator();
+        HashMap<String, ArrayList<Integer>> lineMap = null;
 
         try {
-            generator.generateJacocoReports();
+            lineMap = new Generator().generateReports();
         } catch (Exception e){
             e.printStackTrace();
             System.out.println(e);
         }
 
-        HashMap<String, ArrayList<Integer>> map = generator.generateLineMap();
-        for (Map.Entry<String, ArrayList<Integer>> entry : map.entrySet()) {
+        for (Map.Entry<String, ArrayList<Integer>> entry : lineMap.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
+
         return "Hello world!";
     }
 }
