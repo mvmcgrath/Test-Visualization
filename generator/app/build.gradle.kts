@@ -35,8 +35,7 @@ tasks.register("generateBat") {
         // Directory of Gradle test reports (NOT Jacoco)
         val reportDirectory = file(directoryPath)
 
-        // Regex already accounts for windows and unix
-        val regex = "<tr>(\n|\r\n)<td class=\"(success|failures)\">(.+)</td>".toRegex()
+        val regex = "<tr>(\n)<td class=\"(success|failures)\">(.+)</td>".toRegex()
 
         var resultList = mutableListOf<String>()
 
@@ -54,14 +53,14 @@ tasks.register("generateBat") {
             }
         }
 
-        val batFile = file("testReportGenerator.bat")
-        var textToWrite = "rmdir /S /Q \"build\\reports\\jacoco\\test\"\r\n"
+        val shellFile = file("testReportGenerator.sh")
+        var textToWrite = "#!/bin/bash\nrm -r build/reports/jacoco/test\ncd ..\n"
 
         for (methodName in resultList) {
-            textToWrite += "CALL gradle test --tests $methodName\r\ncd build/reports/jacoco/test\r\nren html $methodName\r\ncd ../../../..\r\n"
+            textToWrite += "bash ./gradlew test --tests $methodName\ncd app/build/reports/jacoco/test\nmv html $methodName\ncd ../../../../..\n"
         }
 
-        batFile.writeText(textToWrite)
+        shellFile.writeText(textToWrite)
     }
 }
 

@@ -1,9 +1,6 @@
 package com.github.mvmcgrath.server.core;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -76,16 +73,37 @@ public class Generator {
         return lineNumbers;
     }
     //Generate Jacoco Reports
-    public void generateJacocoReports() {
+    public void generateJacocoReports() throws Exception {
+        File tempScript = createBashScript();
+
         try {
-            String[] generateCommands = new String[]{"cmd", "/c", "cd ../generator && gradle generateBat"};
-            Runtime.getRuntime().exec(generateCommands).waitFor();
-            String[] batCommands = new String[]{"cmd", "/c", "cd ../generator/app && testReportGenerator.bat"};
-            Runtime.getRuntime().exec(batCommands).waitFor();
+            ProcessBuilder pb = new ProcessBuilder("bash", tempScript.toString());
+            pb.inheritIO();
+            Process process = pb.start();
+            process.waitFor();
         } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println(e);
+            e.printStackTrace();
+            System.out.println(e);
+        } finally {
+            tempScript.delete();
         }
+    }
+
+    public File createBashScript() throws Exception {
+        File tempScript = File.createTempFile("script", null);
+
+        Writer streamWriter = new OutputStreamWriter(new FileOutputStream(tempScript));
+        PrintWriter printWriter = new PrintWriter(streamWriter);
+
+        printWriter.println("#!/bin/bash");
+        printWriter.println("cd ../generator");
+        printWriter.println("bash ./gradlew generateBat");
+        printWriter.println("cd app");
+        printWriter.println("bash ./testReportGenerator.sh");
+
+        printWriter.close();
+
+        return tempScript;
     }
 
 

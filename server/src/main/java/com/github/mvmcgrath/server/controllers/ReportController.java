@@ -16,7 +16,14 @@ public class ReportController {
     @GetMapping("/reports")
     public String getAllReports() {
         Generator generator = new Generator();
-        generator.generateJacocoReports();
+
+        try {
+            generator.generateJacocoReports();
+        } catch (Exception e){
+            e.printStackTrace();
+            System.out.println(e);
+        }
+
         HashMap<String, ArrayList<Integer>> map = generator.generateLineMap();
         for (Map.Entry<String, ArrayList<Integer>> entry : map.entrySet()) {
             System.out.println(entry.getKey());
