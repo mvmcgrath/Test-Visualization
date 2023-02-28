@@ -5,7 +5,6 @@ import org.junit.runner.Request;
 import org.junit.runner.Result;
 
 public class Runner {
-    //Extremely hacky
     public static void main(String[] args) throws Exception {
         JUnitCore junit = new JUnitCore();
 

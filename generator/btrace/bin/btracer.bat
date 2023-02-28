@@ -1,4 +1,4 @@
-@echo on
+@echo off
 
 rem %~dp0 is expanded pathname of the current script under NT
 set DEFAULT_BTRACE_HOME=%~dp0..
@@ -6,7 +6,7 @@ set DEFAULT_BTRACE_HOME=%~dp0..
 if "%BTRACE_HOME%"=="" set BTRACE_HOME=%DEFAULT_BTRACE_HOME%
 set DEFAULT_BTRACE_HOME=
 
-if not exist "%BTRACE_HOME%\libs\btrace-agent.jar" goto noBTraceHome
+if not exist "%BTRACE_HOME%\libs \btrace-agent.jar" goto noBTraceHome
 
 set OPTIONS=
 
@@ -78,6 +78,8 @@ set inloop=1
     set OPTIONS="statsd=%2,%OPTIONS"
     goto next
   )
+  call :usage
+  goto end
 
   set inloop=0
 
@@ -87,7 +89,7 @@ set inloop=1
     goto loop
   )
 
-java -Xshare:off "%JAVA_ARGS%" "-javaagent:%BTRACE_HOME%/libs/btrace-agent.jar=%OPTIONS,script=%~1" %2 %3 %4 %5 %6 %7 %8 %9
+%JAVA_HOME%\bin\java -Xshare:off "%JAVA_ARGS%" "-javaagent:%BTRACE_HOME%/libs/btrace-agent.jar=%OPTIONS,script=%~1" %2 %3 %4 %5 %6 %7 %8 %9
 goto end
 
 :noJavaHome

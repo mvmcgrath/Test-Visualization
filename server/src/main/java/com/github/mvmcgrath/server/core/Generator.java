@@ -74,7 +74,8 @@ public class Generator {
     }
     //Generate Jacoco Reports
     public void generateJacocoReports() throws Exception {
-        File tempScript = createBashScript();
+        String[] commands = new String[]{"#!/bin/bash", "cd ../generator", "bash ./gradlew generateBat", "cd app", "bash ./testReportGenerator.sh"};
+        File tempScript = createBashScript(commands);
 
         try {
             ProcessBuilder pb = new ProcessBuilder("bash", tempScript.toString());
@@ -89,22 +90,24 @@ public class Generator {
         }
     }
 
-    public File createBashScript() throws Exception {
+    public File createBashScript(String[] commands) throws Exception {
         File tempScript = File.createTempFile("script", null);
 
         Writer streamWriter = new OutputStreamWriter(new FileOutputStream(tempScript));
         PrintWriter printWriter = new PrintWriter(streamWriter);
 
-        printWriter.println("#!/bin/bash");
-        printWriter.println("cd ../generator");
-        printWriter.println("bash ./gradlew generateBat");
-        printWriter.println("cd app");
-        printWriter.println("bash ./testReportGenerator.sh");
+        for (String command : commands) {
+            printWriter.println(command);
+        }
 
         printWriter.close();
 
         return tempScript;
     }
+
+
+
+    
 
 
 }

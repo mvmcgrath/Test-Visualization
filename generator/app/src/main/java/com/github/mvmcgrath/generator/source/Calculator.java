@@ -8,15 +8,4 @@ public class Calculator {
     public int multiplyBy2(int num) {
         return addition(num, num);
     }
-
-    public int multiplyBy2IfEvenOr9(int num) {
-        int ans;
-        if (num % 2 == 0 || num == 9) {
-            ans = 1;
-        } else {
-            ans = -1;
-        }
-        ans = 2;
-        return ans;
-    }
 }

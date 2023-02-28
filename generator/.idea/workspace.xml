@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/mvmcgrath/generator/tests/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/github/mvmcgrath/generator/source/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btrace" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btrace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btrace.bat" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btrace.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracec" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracec.bat" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracec.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracep" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracep.bat" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracep.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracer" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/bin/btracer.bat" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/bin/btracer.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/config/BTraceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/config/BTraceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/config/BTraceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/config/BTraceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/config/app-all.jar" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/config/app-all.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/config/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/config/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btrace/libs/amd64/libbtrace.so" beforeDir="false" afterPath="$PROJECT_DIR$/btrace/libs/amd64/libbtrace.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/controllers/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/controllers/ReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +62,12 @@
                 <item name="generator" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="generator" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -111,7 +129,7 @@
       <recent name="server" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.generator [generateBat]">
+  <component name="RunManager" selected="Gradle.generator [shadowJar]">
     <configuration name="generator [generateBat]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -294,8 +312,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.generator [generateBat]" />
         <item itemvalue="Gradle.generator [shadowJar]" />
+        <item itemvalue="Gradle.generator [generateBat]" />
         <item itemvalue="Gradle.generator [wrapper] (1)" />
         <item itemvalue="Gradle.generator [run]" />
         <item itemvalue="Gradle.generator[test]" />

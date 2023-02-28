@@ -17,9 +17,4 @@ public class CalculatorTest {
         Calculator classUnderTest = new Calculator();
         assertEquals(10, classUnderTest.multiplyBy2(4));
     }
-
-    @Test public void calculatorCanMultiplyBy2IfEvenOr9() {
-        Calculator classUnderTest = new Calculator();
-        assertEquals(8, classUnderTest.multiplyBy2IfEvenOr9(4));
-    }
 }
