@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2110bc96-a934-4ddd-9d72-387946ca4f54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btrace" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btrace.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracec.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracep.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btrace/bin/btracer.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

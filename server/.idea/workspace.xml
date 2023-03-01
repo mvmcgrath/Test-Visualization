@@ -6,20 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btrace" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btrace.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracec.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracep.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/bin/btracer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/Results/AbacusTest.abacusCanCount.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/Results/AbacusTest.abacusCanDoubleCount.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/Results/CalculatorTest.calculatorCanAdd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/Results/CalculatorTest.calculatorCanMultiplyBy2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/app-all.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/BTraceGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/BTraceGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
