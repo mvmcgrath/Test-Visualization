@@ -1,5 +1,6 @@
 import { Container } from 'react-bootstrap'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import VisualizationRows from './VisualizationRows'
 
@@ -11,11 +12,11 @@ const StyledDiv = styled.div`
   border: 3px solid white;
 `
 
-const StyledButton = styled.button`
+const StyledButton = styled.div`
   font-size: 1.5rem;
   border: 3px solid white;
   border-radius: 10px;
-  background-color: #4b5054;
+  background-color: #0d6efd;
   padding: 10px;
   color: white;
   min-height: 80px;
@@ -23,6 +24,13 @@ const StyledButton = styled.button`
   cursor: pointer;
   margin-bottom: 10px;
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `
 
 const VisualizeHome = ({ user }) => {
@@ -31,7 +39,11 @@ const VisualizeHome = ({ user }) => {
       <StyledDiv className="bg-dark">
         <VisualizationRows user={user}/>
       </StyledDiv>
-      <StyledButton>Create New Visualization</StyledButton>
+      <StyledLink to={'/upload'}>
+        <StyledButton>
+          Create New Visualization
+        </StyledButton>
+      </StyledLink>
     </Container>
   )
 }

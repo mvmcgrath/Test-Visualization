@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const StyledDiv = styled.div`
   color: white;
-  background-color: #4b5054;
+  background-color: #198754;
   border-bottom: 3px solid white;
   height:80px;
   display: flex;

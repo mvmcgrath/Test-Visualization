@@ -6,6 +6,7 @@ import Navigation from './components/Navigation'
 import VisualizeHome from './components/Visualize/VisualizeHome'
 import Visualization from './components/Visualize/Visualization'
 import Register from './components/Register'
+import Upload from './components/Upload'
 
 import loginService from './services/login'
 
@@ -42,9 +43,10 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home handleLogin={handleLogin} user={user}/>} />
-          <Route path="/visualize" element={ user===null ? <VisualizeHome user={user} /> : <Navigate to="/" />} />
+          <Route path="/visualize" element={ user === null ? <VisualizeHome user={user} /> : <Navigate to="/" />} />
           <Route path="/visualization/:id" element={ <Visualization user={user} />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/upload" element={ user === null ? <Upload user={user}/> : <Navigate to="/login" />} />
         </Routes>
       </div>
     </div>
