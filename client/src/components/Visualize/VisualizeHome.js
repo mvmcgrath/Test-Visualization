@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useState } from 'react'
-import reportService from '../services/report'
+import reportService from '../../services/report'
 
 const BodyContainer = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ const StyledButton = styled.button`
   margin-bottom: 10px;
 `
 
-const Home = () => {
+const VisualizeHome = () => {
   const [lineNumbers, setLineNumbers] = useState('')
 
   const handleClick = (event) => {
@@ -42,4 +42,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default VisualizeHome
