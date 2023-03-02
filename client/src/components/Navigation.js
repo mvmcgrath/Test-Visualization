@@ -22,9 +22,6 @@ const Navigation = () => {
             <Nav.Link href="#" as="span">
               <StyledLink to="/visualize">Visualize</StyledLink>
             </Nav.Link>
-            <Nav.Link href="#" as="span">
-              <StyledLink to="/manage">Manage</StyledLink>
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
