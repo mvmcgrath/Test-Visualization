@@ -17,7 +17,7 @@ const App = () => {
     const user = await loginService.login(loginObject)
 
     window.localStorage.setItem(
-      'loggedImageUser', JSON.stringify(user)
+      'loggedTestUser', JSON.stringify(user)
     )
 
     setUser(user)
@@ -33,13 +33,12 @@ const App = () => {
     if (loggedUserJSON) {
       const user = JSON.parse(loggedUserJSON)
       setUser(user)
-
     }
   }, [])
 
   return (
     <div>
-      <Navigation handleLogout={handleLogout}/>
+      <Navigation user={user} handleLogout={handleLogout}/>
       <div>
         <Routes>
           <Route path="/" element={<Home handleLogin={handleLogin} user={user}/>} />
