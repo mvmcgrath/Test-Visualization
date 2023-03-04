@@ -1,4 +1,4 @@
-package com.github.mvmcgrath.server.controllers;
+package com.github.mvmcgrath.server.controller;
 
 import com.github.mvmcgrath.server.core.Generator;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,18 +1,16 @@
 package com.github.mvmcgrath.server.core;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class LineGen extends Report {
     public HashMap<String, ArrayList<Integer>> generateLineMap() {
         File reportsFolder = new File(REPORTS_PATH);
-        File classFolder = new File(reportsFolder.listFiles()[0]  + "/" + PACKAGE);
+        File classFolder = new File(Objects.requireNonNull(reportsFolder.listFiles())[0]  + "/" + PACKAGE);
         return findJavaFiles(classFolder);
     }
 
@@ -20,7 +18,7 @@ public class LineGen extends Report {
     public HashMap<String, ArrayList<Integer>> findJavaFiles(File classFolder) {
         HashMap<String, ArrayList<Integer>> classLinesDict = new HashMap<>();
 
-        for (File javaFile : classFolder.listFiles()) {
+        for (File javaFile : Objects.requireNonNull(classFolder.listFiles())) {
             String[] fileSplit = javaFile.getName().split("\\.");
 
             if (fileSplit[1].equals("java")) {
