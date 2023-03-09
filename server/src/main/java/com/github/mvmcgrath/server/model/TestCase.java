@@ -10,16 +10,60 @@ public class TestCase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long testCaseId;
 
-    @ManyToOne(targetEntity = Visualization.class, fetch = FetchType.EAGER)
+    @ManyToOne(targetEntity = VisualizationDAO.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "visualizationId", insertable = false, updatable = false)
-    private Visualization visualization;
+    private VisualizationDAO visualizationDAO;
 
     @Column(name = "visualizationId")
-    private Long visualizationId;
+    private long visualizationId;
 
     @Column(name = "methodName", nullable = false)
     private String methodName;
 
     @Column(name = "executionOrder", nullable = false)
-    private String[] exectionOrder;
+    private String[] executionOrder;
+
+    public TestCase() {
+
+    }
+
+    public TestCase(long testCaseId, Long visualizationId, String methodName, String[] executionOrder) {
+        super();
+        this.testCaseId = testCaseId;
+        this.visualizationId = visualizationId;
+        this.methodName = methodName;
+        this.executionOrder = executionOrder;
+    }
+
+    public long getTestCaseId() {
+        return testCaseId;
+    }
+
+    public void setTestCaseId(long testCaseId) {
+        this.testCaseId = testCaseId;
+    }
+
+    public long getVisualizationId() {
+        return visualizationId;
+    }
+
+    public void setVisualizationId(Long visualizationId) {
+        this.visualizationId = visualizationId;
+    }
+
+    public String getMethodName() {
+        return methodName;
+    }
+
+    public void setMethodName(String methodName) {
+        this.methodName = methodName;
+    }
+
+    public String[] getExecutionOrder() {
+        return executionOrder;
+    }
+
+    public void setExecutionOrder(String[] executionOrder) {
+        this.executionOrder = executionOrder;
+    }
 }

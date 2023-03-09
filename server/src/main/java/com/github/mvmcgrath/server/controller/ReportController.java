@@ -1,9 +1,11 @@
 package com.github.mvmcgrath.server.controller;
 
 import com.github.mvmcgrath.server.core.Generator;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.github.mvmcgrath.server.model.VisualizationDAO;
+import com.github.mvmcgrath.server.model.VisualizationDTO;
+import org.apache.coyote.Response;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,5 +32,12 @@ public class ReportController {
         }
 
         return "Hello world!";
+    }
+
+    @PostMapping("/reports")
+    public ResponseEntity<?> createVisualization(@RequestBody VisualizationDTO visualizationDTO) throws Exception {
+        System.out.println(visualizationDTO.getTitle());
+
+        return ResponseEntity.ok("Hello world!");
     }
 }

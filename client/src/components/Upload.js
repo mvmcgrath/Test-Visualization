@@ -28,7 +28,7 @@ const Upload = ({ user }) => {
   const [sourceFiles, setSourceFiles] = useState([])
   const [testFiles, setTestFiles] = useState([])
 
-  const onSubmit = async (event) => {
+  const onSubmit = (event) => {
     event.preventDefault()
 
     // Messy promise handling, needs to be refactored
