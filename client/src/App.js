@@ -9,6 +9,7 @@ import Register from './components/Register'
 import Upload from './components/Upload'
 
 import loginService from './services/login'
+import reportService from './services/report'
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -21,6 +22,7 @@ const App = () => {
     )
 
     setUser(user)
+    reportService.setToken(user.token)
   }
 
   const handleLogout = () => {
@@ -33,6 +35,7 @@ const App = () => {
     if (loggedUserJSON) {
       const user = JSON.parse(loggedUserJSON)
       setUser(user)
+      reportService.setToken(user.token)
     }
   }, [])
 
@@ -42,10 +45,10 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home handleLogin={handleLogin} user={user}/>} />
-          <Route path="/visualize" element={ user === null ? <VisualizeHome user={user} /> : <Navigate to="/" />} />
+          <Route path="/visualize" element={ user !== null ? <VisualizeHome user={user} /> : <Navigate to="/" />} />
           <Route path="/visualization/:id" element={ <Visualization user={user} />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/upload" element={ user === null ? <Upload user={user}/> : <Navigate to="/login" />} />
+          <Route path="/upload" element={ user !== null ? <Upload user={user}/> : <Navigate to="/" />} />
         </Routes>
       </div>
     </div>

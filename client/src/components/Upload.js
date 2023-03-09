@@ -1,7 +1,9 @@
 import { Container, Form, Button } from 'react-bootstrap'
 import styled from 'styled-components'
 import { useState } from 'react'
-//import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
+import reportService from '../services/report'
 
 const StyledDiv = styled.div`
   width: 600px;
@@ -20,17 +22,52 @@ const StyledVerticalFlex = styled.div`
 `
 
 const Upload = ({ user }) => {
-  //const navigate = useNavigate()
+  const navigate = useNavigate()
+
   const [title, setTitle] = useState('')
   const [sourceFiles, setSourceFiles] = useState([])
   const [testFiles, setTestFiles] = useState([])
 
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault()
-    console.log(user)
-    console.log(title)
-    console.log(sourceFiles)
-    console.log(testFiles)
+
+    // Messy promise handling, needs to be refactored
+    const sourceFileArray = []
+    const testFileArray = []
+    const promiseArray = []
+
+    const readFile = (file, isSource) => {
+      return new Promise((resolve) => {
+        const fileReader = new FileReader()
+
+        fileReader.onload = () => {
+          if (/^text\//.test(file.type)) {
+            if (isSource) {
+              sourceFileArray.push(fileReader.result)
+            } else {
+              testFileArray.push(fileReader.result)
+            }
+            resolve()
+          }
+        }
+
+        fileReader.readAsText(file)
+      })
+    }
+
+    Array.from(sourceFiles).forEach(file => {
+      promiseArray.push(readFile(file, true))
+    })
+
+    Array.from(testFiles).forEach(file => {
+      promiseArray.push(readFile(file, false))
+    })
+
+    Promise.all(promiseArray).then(() => {
+      reportService.uploadVisual({ sourceFiles: sourceFileArray, testFiles: testFileArray, title, userId: user.userId }).then((result) => {
+        navigate(`/visualization/${result.visualizationId}`)
+      })
+    })
   }
 
   return (
