@@ -22,6 +22,7 @@ const App = () => {
     )
 
     setUser(user)
+    console.log(user)
     reportService.setToken(user.token)
   }
 

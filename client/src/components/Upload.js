@@ -40,12 +40,13 @@ const Upload = ({ user }) => {
       return new Promise((resolve) => {
         const fileReader = new FileReader()
 
+
         fileReader.onload = () => {
           if (/^text\//.test(file.type)) {
             if (isSource) {
-              sourceFileArray.push(fileReader.result)
+              sourceFileArray.push([file.name, fileReader.result])
             } else {
-              testFileArray.push(fileReader.result)
+              testFileArray.push([file.name, fileReader.result])
             }
             resolve()
           }

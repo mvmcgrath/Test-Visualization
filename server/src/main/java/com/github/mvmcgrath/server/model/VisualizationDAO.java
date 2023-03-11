@@ -39,7 +39,7 @@ public class VisualizationDAO {
         this.visualizationId = visualizationId;
     }
 
-    public Long getUserId() {
+    public long getUserId() {
         return userId;
     }
 

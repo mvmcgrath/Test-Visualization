@@ -1,9 +1,9 @@
 package com.github.mvmcgrath.server.controller;
 
 import com.github.mvmcgrath.server.core.Generator;
-import com.github.mvmcgrath.server.model.VisualizationDAO;
 import com.github.mvmcgrath.server.model.VisualizationDTO;
-import org.apache.coyote.Response;
+import com.github.mvmcgrath.server.service.VisualizationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +14,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/")
 public class ReportController {
+
+    @Autowired
+    private VisualizationService visualizationService;
 
     @GetMapping("/reports")
     public String getAllReports() {
@@ -36,8 +39,6 @@ public class ReportController {
 
     @PostMapping("/reports")
     public ResponseEntity<?> createVisualization(@RequestBody VisualizationDTO visualizationDTO) throws Exception {
-        System.out.println(visualizationDTO.getTitle());
-
-        return ResponseEntity.ok("Hello world!");
+        return ResponseEntity.ok(visualizationService.save(visualizationDTO));
     }
 }

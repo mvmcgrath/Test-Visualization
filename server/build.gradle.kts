@@ -22,6 +22,7 @@ dependencies {
 	implementation("org.postgresql:postgresql")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-devtools")
+	implementation("commons-io:commons-io:2.11.0")
 }
 
 tasks.withType<Test> {

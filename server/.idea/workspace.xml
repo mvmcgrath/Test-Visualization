@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/tests/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/test/java/com/github/mvmcgrath/generator/source/AbacusTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/test/java/com/github/mvmcgrath/generator/source/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/Visualization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/VisualizationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/VisualizationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.ced52b0e.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/main.ced52b0e.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.ced52b0e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.ced52b0e.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.ced52b0e.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +90,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mvmcgrath/Projects/Image-Sharer/server&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/mvmcgrath/Projects/Image-Sharer/server",
+    "settings.editor.selected.configurable": "Errors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server" />
@@ -191,5 +204,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

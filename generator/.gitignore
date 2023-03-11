@@ -8,3 +8,6 @@ btrace/samples
 btrace/bin
 btrace/config/results
 btrace/config/app-all.jar
+app/src/main/java/com/github/mvmcgrath/generator/source/*
+app/src/main/java/com/github/mvmcgrath/generator/tests/*
+app/src/test/java/com/github/mvmcgrath/generator/source/*
