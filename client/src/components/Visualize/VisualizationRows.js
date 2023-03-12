@@ -1,13 +1,21 @@
 import VisualizationRow from './VisualizationRow'
+import { useState, useEffect } from 'react'
 
-//Dummy data
-const rows = [{ text: 'Visualization 1', id: 1 }, { text: 'Visualization 2', id: 2 }]
+import visualizationService from '../../services/visual.js'
 
-const VisualizationRows= () => {
+const VisualizationRows = ({ user }) => {
+  const [visualizations, setVisualizations] = useState([])
+
+  useEffect(() => {
+    visualizationService.getAll().then(returnedVisuals => {
+      setVisualizations(returnedVisuals.filter(visual => visual.userId === user.userId))
+    })
+  }, [])
+
   return(
     <div>
-      {rows.map((row) =>
-        <VisualizationRow key={row.id} row={row} />
+      {visualizations.map((visual) =>
+        <VisualizationRow key={visual.visualizationId} row={visual} />
       )}
     </div>
   )

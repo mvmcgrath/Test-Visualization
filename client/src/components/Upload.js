@@ -1,9 +1,9 @@
-import { Container, Form, Button } from 'react-bootstrap'
+import { Container, Form, Button, Spinner } from 'react-bootstrap'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import reportService from '../services/report'
+import reportService from '../services/visual'
 
 const StyledDiv = styled.div`
   width: 600px;
@@ -27,9 +27,11 @@ const Upload = ({ user }) => {
   const [title, setTitle] = useState('')
   const [sourceFiles, setSourceFiles] = useState([])
   const [testFiles, setTestFiles] = useState([])
+  const [processing, setProcessing] = useState(false)
 
   const onSubmit = (event) => {
     event.preventDefault()
+    setProcessing(true)
 
     // Messy promise handling, needs to be refactored
     const sourceFileArray = []
@@ -66,6 +68,7 @@ const Upload = ({ user }) => {
 
     Promise.all(promiseArray).then(() => {
       reportService.uploadVisual({ sourceFiles: sourceFileArray, testFiles: testFileArray, title, userId: user.userId }).then((result) => {
+        setProcessing(false)
         navigate(`/visualization/${result.visualizationId}`)
       })
     })
@@ -103,7 +106,14 @@ const Upload = ({ user }) => {
                   />
                 </div>
                 <Button variant="primary" type="submit">
-                  Upload
+                  {processing && <Spinner
+                    as="span"
+                    animation="border"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                  />}
+                  {' Upload'}
                 </Button>
               </StyledVerticalFlex>
             </Form.Group>

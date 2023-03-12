@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const StyledDiv = styled.div`
   color: white;
-  background-color: #198754;
   border-bottom: 3px solid white;
   height:80px;
   display: flex;
@@ -18,9 +17,9 @@ const StyledLink = styled(Link)`
 
 const VisualizationRow = ({ row }) => {
   return(
-    <StyledLink to={`/visualization/${row.id}`}>
+    <StyledLink to={`/visualization/${row.visualizationId}`}>
       <StyledDiv>
-        <h2>{row.text}</h2>
+        <h2>{row.title}</h2>
       </StyledDiv>
     </StyledLink>
   )

@@ -9,7 +9,7 @@ import Register from './components/Register'
 import Upload from './components/Upload'
 
 import loginService from './services/login'
-import reportService from './services/report'
+import reportService from './services/visual'
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -22,13 +22,13 @@ const App = () => {
     )
 
     setUser(user)
-    console.log(user)
     reportService.setToken(user.token)
   }
 
   const handleLogout = () => {
     window.localStorage.removeItem('loggedTestUser')
     setUser(null)
+    reportService.setToken(null)
   }
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home handleLogin={handleLogin} user={user}/>} />
           <Route path="/visualize" element={ user !== null ? <VisualizeHome user={user} /> : <Navigate to="/" />} />
-          <Route path="/visualization/:id" element={ <Visualization user={user} />} />
+          <Route path="/visualization/:visualizationId" element={ <Visualization user={user} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/upload" element={ user !== null ? <Upload user={user}/> : <Navigate to="/" />} />
         </Routes>

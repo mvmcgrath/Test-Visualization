@@ -25,17 +25,16 @@ const StyledButton = styled.button`
   margin-top: 30px;
 `
 
-const CodeDisplay = () => {
+const CodeDisplay = ({ classFiles }) => {
   return (
     <div>
       <StyledCodeDisplay className="bg-dark">
         <Tabs className="mb-0">
-          <Tab eventKey="Calculator" title="Calculator.java">
-            <p>Hello</p>
-          </Tab>
-          <Tab eventKey="Abacus" title="Abacus.java">
-            <p>Hi</p>
-          </Tab>
+          {classFiles.map((classFile) =>
+            <Tab key={classFile.reportClassId} eventKey={classFile.className} title={classFile.className.concat('.java')} >
+              {classFile.htmlReport}
+            </Tab>
+          )}
         </Tabs>
       </StyledCodeDisplay>
       <StyledButtonDisplay className="d-flex justify-content-center align-items-center">

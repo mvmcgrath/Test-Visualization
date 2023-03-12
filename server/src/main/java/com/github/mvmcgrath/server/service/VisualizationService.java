@@ -38,7 +38,7 @@ public class VisualizationService {
 
     private void writeFiles(String[][] files, String outputDir, String newPackage) throws Exception {
         final String replacementPackage = "package " + newPackage + ";\n";
-        final String regex = "package [\\w\\.]+;\\n";
+        final String regex = "package [\\w\\.]+;(\n|\r\n)";
         final Pattern pattern = Pattern.compile(regex);
 
         for (String[] singleFile : files) {

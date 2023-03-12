@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import { useState, useEffect } from 'react'
+
+import TestDisplayRow from './TestDisplayRow'
+import testCaseService from '../../services/testCase'
 
 const StyledButton = styled.button`
   font-size: 1.5rem;
@@ -20,26 +24,23 @@ const StyledTestDisplay = styled.div`
   border: 3px solid white;
 `
 
-const StyledTestCase = styled.div`
-    width: 400px;
-    height: 100px;
-    border-bottom: 3px solid white;
-    cursor: pointer;
-`
 
-const StyledHeader = styled.h2`
-    font-size: 1.3rem;
-    overflow-wrap: anywhere;
-`
+const TestDisplay = ({ visualizationId, onSelect }) => {
+  const [testCases, setTestCases] = useState([])
 
+  useEffect(() => {
+    // This filtering is not ideal
+    testCaseService.getAll().then(returnedTestCases => {
+      setTestCases(returnedTestCases.filter(testCase => testCase.visualizationId === parseInt(visualizationId)))
+    })
+  }, [])
 
-const TestDisplay = () => {
   return (
     <div className="d-flex justify-content-flex-start align-items-center flex-column">
       <StyledTestDisplay className="bg-dark d-flex justify-content-flex-start align-items-center flex-column">
-        <StyledTestCase className="d-flex justify-content-center align-items-center">
-          <StyledHeader>Calculator.calculatorCanAdd</StyledHeader>
-        </StyledTestCase>
+        {testCases.map(testCase =>
+          <TestDisplayRow key={testCase.testCaseId} testCase={testCase} onSelect={onSelect} />
+        )}
       </StyledTestDisplay>
       <StyledButton>Delete</StyledButton>
     </div>

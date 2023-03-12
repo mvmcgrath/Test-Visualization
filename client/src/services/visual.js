@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/api/reports'
+const baseUrl = '/api/visuals'
 
 let token = null
 
@@ -16,12 +16,10 @@ const uploadVisual = async ( visualObject ) => {
   return response.data
 }
 
-const getReports = async () => {
+const getAll = async () => {
   const response = await axios.get(baseUrl)
   return response.data
 }
 
-
-
-export default { setToken, uploadVisual, getReports }
+export default { setToken, uploadVisual, getAll }
 

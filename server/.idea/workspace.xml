@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/CodeDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/CodeDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/TestDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/TestDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/Visualization.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/Visualization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRows.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/VisualizationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/VisualizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/VisualizationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,14 +87,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/mvmcgrath/Projects/Image-Sharer/server",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mvmcgrath/Projects/Image-Sharer/server&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server" />
