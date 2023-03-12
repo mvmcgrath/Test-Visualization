@@ -66,12 +66,6 @@ public class VisualizationService {
 
         manageFiles(visual.getSourceFiles(), visual.getTestFiles());
 
-        HashMap<String, ArrayList<Integer>> lineMap = new Generator().generateReports();
-
-
-
-
-
         return visualizationRepository.save(newVisual);
     }
 }

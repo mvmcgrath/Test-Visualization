@@ -20,22 +20,18 @@ public class ReportClass {
     @Column(name = "className", nullable = false)
     private String className;
 
-    @Column(name = "javaCode", nullable = false)
-    private String javaCode;
-
-    @Column(name = "htmlReport", nullable = false)
+    @Column(name = "htmlReport", length=10000000, nullable = false)
     private String htmlReport;
 
-    @Column(name = "lineNumbers", nullable = false)
-    private int[] lineNumbers;
+    public ReportClass() {
 
-    public ReportClass(long reportClassId, long testCaseId, String className, String javaCode, String htmlReport, int[] lineNumbers) {
+    }
+
+    public ReportClass(long reportClassId, long testCaseId, String className, String htmlReport) {
         this.reportClassId = reportClassId;
         this.testCaseId = testCaseId;
         this.className = className;
-        this.javaCode = javaCode;
         this.htmlReport = htmlReport;
-        this.lineNumbers = lineNumbers;
     }
 
     public long getReportClassId() {
@@ -62,27 +58,11 @@ public class ReportClass {
         this.className = className;
     }
 
-    public String getJavaCode() {
-        return javaCode;
-    }
-
-    public void setJavaCode(String javaCode) {
-        this.javaCode = javaCode;
-    }
-
     public String getHtmlReport() {
         return htmlReport;
     }
 
     public void setHtmlReport(String htmlReport) {
         this.htmlReport = htmlReport;
-    }
-
-    public int[] getLineNumbers() {
-        return lineNumbers;
-    }
-
-    public void setLineNumbers(int[] lineNumbers) {
-        this.lineNumbers = lineNumbers;
     }
 }
