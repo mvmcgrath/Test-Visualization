@@ -33,7 +33,7 @@ public class Report {
 
 
             while (str != null) {
-                htmlBuilder.append(str);
+                htmlBuilder.append(str + "\n");
                 str = input.readLine();
             }
 

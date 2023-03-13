@@ -64,6 +64,8 @@ public class VisualizationService {
         newVisual.setUserId(visual.getUserId());
         newVisual.setTitle(visual.getTitle());
 
+
+
         manageFiles(visual.getSourceFiles(), visual.getTestFiles());
 
         return visualizationRepository.save(newVisual);

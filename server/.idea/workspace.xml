@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/CodeDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/CodeDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/TestDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/TestDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/Visualization.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/Visualization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRows.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Visualize/VisualizationRows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/services/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/VisualizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/ReportClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/ReportClassService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/VisualizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/VisualizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.bd5d7186.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.21967e13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.21967e13.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.21967e13.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

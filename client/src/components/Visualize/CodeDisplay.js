@@ -32,7 +32,7 @@ const CodeDisplay = ({ classFiles }) => {
         <Tabs className="mb-0">
           {classFiles.map((classFile) =>
             <Tab key={classFile.reportClassId} eventKey={classFile.className} title={classFile.className.concat('.java')} >
-              {classFile.htmlReport}
+              <div dangerouslySetInnerHTML={{ __html: classFile.htmlReport }}/>
             </Tab>
           )}
         </Tabs>
