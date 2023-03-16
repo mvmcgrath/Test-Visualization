@@ -16,10 +16,19 @@ const uploadVisual = async ( visualObject ) => {
   return response.data
 }
 
+const deleteVisual = async (id) => {
+  const config = {
+    headers: { Authorization: token }
+  }
+
+  const response = await axios.delete(`${baseUrl}/${id}`, config)
+  return response.data
+}
+
 const getAll = async () => {
   const response = await axios.get(baseUrl)
   return response.data
 }
 
-export default { setToken, uploadVisual, getAll }
+export default { setToken, uploadVisual, deleteVisual, getAll }
 

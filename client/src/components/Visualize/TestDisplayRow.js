@@ -18,7 +18,7 @@ const TestDisplayRow = ({ testCase, onSelect }) => {
   }
 
   return(
-    <StyledTestCase onClick={onClick}className="d-flex justify-content-center align-items-center">
+    <StyledTestCase onClick={onClick} className="d-flex justify-content-center align-items-center">
       <StyledHeader>{testCase.methodName}</StyledHeader>
     </StyledTestCase>
   )

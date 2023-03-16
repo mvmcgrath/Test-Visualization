@@ -25,8 +25,12 @@ const StyledTestDisplay = styled.div`
 `
 
 
-const TestDisplay = ({ visualizationId, onSelect }) => {
+const TestDisplay = ({ visualizationId, onSelect, onDelete }) => {
   const [testCases, setTestCases] = useState([])
+
+  const onClick = () => {
+    onDelete()
+  }
 
   useEffect(() => {
     // This filtering is not ideal
@@ -42,7 +46,7 @@ const TestDisplay = ({ visualizationId, onSelect }) => {
           <TestDisplayRow key={testCase.testCaseId} testCase={testCase} onSelect={onSelect} />
         )}
       </StyledTestDisplay>
-      <StyledButton>Delete</StyledButton>
+      <StyledButton onClick={onClick}>Delete</StyledButton>
     </div>
   )
 }

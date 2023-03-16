@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 import CodeDisplay from './CodeDisplay'
 import TestDisplay from './TestDisplay'
 import reportClassService from '../../services/reportClass'
+import visualService from '../../services/visual'
 
 const StyledPageContainer = styled.div`
     display: flex;
@@ -21,6 +22,7 @@ const StyledDisplayContainer = styled.div`
 `
 
 const Visualization = () => {
+  const navigate = useNavigate()
   const visualizationId = useParams().visualizationId
 
   const [classFiles, setClassFiles] = useState([])
@@ -31,10 +33,16 @@ const Visualization = () => {
     })
   }
 
+  const onDelete = () => {
+    visualService.deleteVisual(visualizationId).then(() => {
+      navigate('/')
+    })
+  }
+
   return(
     <StyledPageContainer>
       <StyledDisplayContainer>
-        <TestDisplay visualizationId={visualizationId} onSelect={onSelect} />
+        <TestDisplay visualizationId={visualizationId} onSelect={onSelect} onDelete={onDelete} />
         <CodeDisplay classFiles={classFiles} />
       </StyledDisplayContainer>
     </StyledPageContainer>
