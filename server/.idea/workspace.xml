@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/TestCaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/TestCaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/VisualizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/VisualizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/TestCaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/TestCaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/report.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.a6daaebe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.a6daaebe.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.a6daaebe.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/sort.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
