@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useState, useEffect } from 'react'
 import { Tab, Tabs } from 'react-bootstrap'
 
 const StyledCodeDisplay = styled.div`
@@ -25,12 +26,49 @@ const StyledButton = styled.button`
   margin-top: 30px;
 `
 
-const CodeDisplay = ({ classFiles }) => {
+const CodeDisplay = ({ classFiles, executionData, onIndexChange }) => {
+  const [modifiedClassFiles, setModifiedClassFiles] = useState([])
+  const [key, setKey] = useState('')
+
+  useEffect(() => {
+    if (classFiles.length !== 0 && executionData.length !== 0) {
+      const newClassFiles = [...classFiles]
+      var classFileToModify = newClassFiles.filter(classFile => classFile.className === executionData[0])[0]
+
+
+      // This is probably too much
+      const regex = `class="(fc|nc|pc)" id="L${executionData[1]}"`
+      const coverageType = classFileToModify.htmlReport.match(regex)[1]
+      console.log(coverageType)
+
+      classFileToModify = { ...classFileToModify, htmlReport: classFileToModify.htmlReport.replace(`class="${coverageType}" id="L${executionData[1]}"`, `class="${coverageType} selected" id="L${executionData[1]}"`) }
+      const updatedClassFiles = [ ...newClassFiles.filter(classFile => classFile.className !== classFileToModify.className), classFileToModify ]
+
+      console.log(classFileToModify.htmlReport)
+      setKey(executionData[0])
+      setModifiedClassFiles(updatedClassFiles)
+    }
+  }, [executionData])
+
+  const onForward = () => {
+    onIndexChange(true)
+  }
+
+  const onBackward = () => {
+    onIndexChange(false)
+  }
+
+
+
   return (
     <div>
       <StyledCodeDisplay className="bg-dark">
-        <Tabs className="mb-0">
-          {classFiles.map((classFile) =>
+        <Tabs
+          className="mb-0"
+          activeKey={key}
+          onSelect={(k) => setKey(k)}
+        >
+          {modifiedClassFiles.map((classFile) =>
             <Tab key={classFile.reportClassId} eventKey={classFile.className} title={classFile.className.concat('.java')} >
               <div dangerouslySetInnerHTML={{ __html: classFile.htmlReport }}/>
             </Tab>
@@ -38,8 +76,8 @@ const CodeDisplay = ({ classFiles }) => {
         </Tabs>
       </StyledCodeDisplay>
       <StyledButtonDisplay className="d-flex justify-content-center align-items-center">
-        <StyledButton>{'<-'}</StyledButton>
-        <StyledButton>{'->'}</StyledButton>
+        <StyledButton onClick={onBackward}>{'<-'}</StyledButton>
+        <StyledButton onClick={onForward}>{'->'}</StyledButton>
       </StyledButtonDisplay>
     </div>
   )

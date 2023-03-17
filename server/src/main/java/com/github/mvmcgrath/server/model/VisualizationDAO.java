@@ -1,6 +1,10 @@
 package com.github.mvmcgrath.server.model;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "visualizations")
@@ -11,6 +15,7 @@ public class VisualizationDAO {
     private long visualizationId;
 
     @ManyToOne(targetEntity = UserDAO.class, fetch = FetchType.EAGER)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "userId", insertable = false, updatable = false)
     private UserDAO user;
 

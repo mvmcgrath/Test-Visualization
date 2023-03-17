@@ -1,6 +1,5 @@
 package com.github.mvmcgrath.server.controller;
 
-import com.github.mvmcgrath.server.core.Generator;
 import com.github.mvmcgrath.server.exception.ResourceNotFoundException;
 import com.github.mvmcgrath.server.model.TestCase;
 import com.github.mvmcgrath.server.model.VisualizationDAO;
@@ -42,7 +41,7 @@ public class VisualizationController {
     @GetMapping("/visuals/{id}")
     public ResponseEntity<VisualizationDAO> getVisual(@PathVariable long id) {
         VisualizationDAO visual = visualizationRepository.findById(id).orElseThrow(
-                () -> new ResourceNotFoundException("An image does not exist with id: " + id));
+                () -> new ResourceNotFoundException("Visualization does not exist with id: " + id));
 
         return ResponseEntity.ok(visual);
     }
@@ -54,5 +53,16 @@ public class VisualizationController {
         reportClassService.save(testCases);
 
         return ResponseEntity.ok(visual);
+    }
+
+    @DeleteMapping("/visuals/{id}")
+    public ResponseEntity<Map<String, Boolean>> deleteVisualization(@PathVariable Long id) {
+        VisualizationDAO image = visualizationRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Visualization does not exist with id: " + id));
+
+        visualizationRepository.delete(image);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("deleted", Boolean.TRUE);
+        return ResponseEntity.ok(response);
     }
 }

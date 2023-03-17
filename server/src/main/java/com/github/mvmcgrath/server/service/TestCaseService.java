@@ -29,11 +29,11 @@ public class TestCaseService {
 
         final File jacocoReportDir = new File(JACOCO_REPORT_PATH);
 
-        final String regex = "([\\w\\.]+ \\d+)\n";
+        final String regex = "([\\w\\.]+) (\\d+)\n";
         final Pattern pattern = Pattern.compile(regex);
 
         for (File testCase : jacocoReportDir.listFiles()) {
-            ArrayList<String> executionOrder = new ArrayList<>();
+            ArrayList<String[]> executionOrder = new ArrayList<>();
 
             final String fileName = testCase.getName();
 
@@ -44,12 +44,13 @@ public class TestCaseService {
             Matcher matcher = pattern.matcher(parsedReport);
 
             while (matcher.find()) {
-                executionOrder.add(matcher.group(1));
+                String className = matcher.group(1).split("\\.")[5];
+                executionOrder.add(new String[]{className, matcher.group(2)});
             }
 
             final TestCase newTestCase = new TestCase();
             newTestCase.setMethodName(fileName);
-            newTestCase.setExecutionOrder(executionOrder.toArray(new String[0]));
+            newTestCase.setExecutionOrder(executionOrder.toArray(new String[0][0]));
             newTestCase.setVisualizationId(visual.getVisualizationId());
             testCases.add(testCaseRepository.save(newTestCase));
         }

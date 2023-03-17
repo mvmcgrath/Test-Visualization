@@ -1,5 +1,8 @@
 package com.github.mvmcgrath.server.model;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +14,7 @@ public class ReportClass {
     private long reportClassId;
 
     @ManyToOne(targetEntity = TestCase.class, fetch = FetchType.EAGER)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "testCaseId", insertable = false, updatable = false)
     private TestCase testCase;
 

@@ -1,6 +1,10 @@
 package com.github.mvmcgrath.server.model;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "testcase")
@@ -11,6 +15,7 @@ public class TestCase {
     private long testCaseId;
 
     @ManyToOne(targetEntity = VisualizationDAO.class, fetch = FetchType.EAGER)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "visualizationId", insertable = false, updatable = false)
     private VisualizationDAO visualizationDAO;
 
@@ -21,13 +26,13 @@ public class TestCase {
     private String methodName;
 
     @Column(name = "executionOrder", nullable = false)
-    private String[] executionOrder;
+    private String[][] executionOrder;
 
     public TestCase() {
 
     }
 
-    public TestCase(long testCaseId, Long visualizationId, String methodName, String[] executionOrder) {
+    public TestCase(long testCaseId, Long visualizationId, String methodName, String[][] executionOrder) {
         super();
         this.testCaseId = testCaseId;
         this.visualizationId = visualizationId;
@@ -59,11 +64,11 @@ public class TestCase {
         this.methodName = methodName;
     }
 
-    public String[] getExecutionOrder() {
+    public String[][] getExecutionOrder() {
         return executionOrder;
     }
 
-    public void setExecutionOrder(String[] executionOrder) {
+    public void setExecutionOrder(String[][] executionOrder) {
         this.executionOrder = executionOrder;
     }
 }
