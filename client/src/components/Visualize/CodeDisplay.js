@@ -39,12 +39,10 @@ const CodeDisplay = ({ classFiles, executionData, onIndexChange }) => {
       // This is probably too much
       const regex = `class="(fc|nc|pc)" id="L${executionData[1]}"`
       const coverageType = classFileToModify.htmlReport.match(regex)[1]
-      console.log(coverageType)
 
       classFileToModify = { ...classFileToModify, htmlReport: classFileToModify.htmlReport.replace(`class="${coverageType}" id="L${executionData[1]}"`, `class="${coverageType} selected" id="L${executionData[1]}"`) }
       const updatedClassFiles = [ ...newClassFiles.filter(classFile => classFile.className !== classFileToModify.className), classFileToModify ]
 
-      console.log(classFileToModify.htmlReport)
       setKey(executionData[0])
       setModifiedClassFiles(updatedClassFiles)
     }

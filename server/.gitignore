@@ -36,3 +36,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+testReportGenerator.sh
+btrace/samples
+btrace/bin
+backend/src/main/resources/application-dev.properties

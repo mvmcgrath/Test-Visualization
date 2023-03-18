@@ -5,8 +5,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e37de651-310c-433c-9d9f-1222355728db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/core/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Abacus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/source/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/tests/AbacusTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/app/src/main/java/com/github/mvmcgrath/generator/tests/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/LICENSE-3RD-PARTY.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/THIRDPARTYLICENSEREADME.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/BTraceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/config/BTraceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/libs/amd64/libbtrace.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/libs/btrace-agent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/libs/btrace-boot.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/btrace/libs/btrace-client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generator/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/config/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/config/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/config/JwtTokenUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/JwtAuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/ReportClassController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/TestCaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/controller/VisualizationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/BTraceGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/JacocoGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/LineGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/core/Report.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/ReportClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/TestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model/VisualizationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/ReportClassRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/TestCaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/repository/VisualizationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/ReportClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/TestCaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/service/VisualizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/css/main.189a1281.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/css/main.189a1281.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.40eafe2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.40eafe2c.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/main.40eafe2c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/mvmcgrath/server/ServerApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +129,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/generator">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -34,19 +145,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="server" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="server" type="f1a62948:ProjectNode" />
+                <item name="backend" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="server" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -80,12 +192,13 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mvmcgrath/Projects/Image-Sharer/server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mvmcgrath/Projects/Test-Visualization/server&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/mvmcgrath/server/model" />
     </key>
@@ -97,7 +210,7 @@
       <recent name="com.github.mvmcgrath.server.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.server [bootRun]">
+  <component name="RunManager" selected="Gradle.server:backend [bootRun]">
     <configuration name="server [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,6 +253,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="server [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="server [wrapper]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,8 +297,31 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="server:backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.server:backend [bootRun]" />
+        <item itemvalue="Gradle.server [shadowJar]" />
         <item itemvalue="Gradle.server [bootRun]" />
       </list>
     </recent_temporary>
