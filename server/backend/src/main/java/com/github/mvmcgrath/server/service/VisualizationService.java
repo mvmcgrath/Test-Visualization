@@ -16,8 +16,8 @@ import java.util.regex.Pattern;
 
 @Service
 public class VisualizationService {
-    final String GEN_MAIN_PATH = "../generator/src/main/java/com/github/mvmcgrath/generator/";
-    final String GEN_TEST_PATH = "../generator/src/test/java/com/github/mvmcgrath/generator/source";
+    final String GEN_MAIN_PATH = "generator/src/main/java/com/github/mvmcgrath/generator/";
+    final String GEN_TEST_PATH = "generator/src/test/java/com/github/mvmcgrath/generator/source";
 
     @Autowired
     private VisualizationRepository visualizationRepository;

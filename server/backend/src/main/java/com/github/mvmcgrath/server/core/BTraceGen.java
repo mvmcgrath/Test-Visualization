@@ -8,12 +8,12 @@ import java.util.Objects;
 
 public class BTraceGen extends Report {
 
-    final String RUNNER_PATH = "../generator/src/main/java/com/github/mvmcgrath/generator/core/Runner.java";
+    final String RUNNER_PATH = "generator/src/main/java/com/github/mvmcgrath/generator/core/Runner.java";
 
     public void generateBTraceReports() {
         HashMap<String, ArrayList<String>> classMap = findTestCases();
 
-        String[] commands = new String[]{"#!/bin/bash", "cd ../btrace/config", "rm -r results", "mkdir results"};
+        String[] commands = new String[]{"#!/bin/bash", "cd btrace/config", "rm -r results", "mkdir results"};
         executeBashScript(commands);
 
         for (String className : classMap.keySet()) {
@@ -42,7 +42,7 @@ public class BTraceGen extends Report {
     public void generateSingleReport(String className, String testName) {
         configureRunner(className, testName);
 
-        String[] commands = new String[]{"#!/bin/bash", "cd ..", "bash ./gradlew :generator:shadowJar",
+        String[] commands = new String[]{"#!/bin/bash", "bash ./gradlew :generator:shadowJar",
                 "cd btrace/config", "java -javaagent:../libs/btrace-agent.jar=scriptOutputFile=" + className + "." + testName +
                 ".txt,script=BTraceConfig.class -jar generator-all.jar", "mv " + className + "." + testName + ".txt results"};
         executeBashScript(commands);

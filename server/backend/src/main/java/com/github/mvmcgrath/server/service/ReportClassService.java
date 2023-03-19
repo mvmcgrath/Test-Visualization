@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 @Service
 public class ReportClassService {
-    final String JACOCO_REPORT_PATH = "../generator/build/reports/jacoco/test/";
+    final String JACOCO_REPORT_PATH = "generator/build/reports/jacoco/test/";
 
     @Autowired
     private ReportClassRepository reportClassRepository;

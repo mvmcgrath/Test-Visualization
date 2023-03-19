@@ -16,9 +16,9 @@ import java.util.regex.Pattern;
 
 @Service
 public class TestCaseService {
-    final String JACOCO_REPORT_PATH = "../generator/build/reports/jacoco/test";
+    final String JACOCO_REPORT_PATH = "generator/build/reports/jacoco/test";
 
-    final String BTRACE_REPORT_PATH = "../btrace/config/results/";
+    final String BTRACE_REPORT_PATH = "btrace/config/results/";
 
     @Autowired
     private TestCaseRepository testCaseRepository;

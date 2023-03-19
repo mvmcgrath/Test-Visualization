@@ -3,7 +3,7 @@ package com.github.mvmcgrath.server.core;
 import java.io.*;
 
 public class Report {
-    final String REPORTS_PATH = "../generator/build/reports/jacoco/test";
+    final String REPORTS_PATH = "generator/build/reports/jacoco/test";
 
     final String PACKAGE = "com.github.mvmcgrath.generator.source";
 
