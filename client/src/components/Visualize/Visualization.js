@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useParams, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import CodeDisplay from './CodeDisplay'
 import TestDisplay from './TestDisplay'
@@ -26,15 +26,17 @@ const Visualization = () => {
   const navigate = useNavigate()
   const visualizationId = useParams().visualizationId
 
+  const [testCases, setTestCases] = useState([])
   const [classFiles, setClassFiles] = useState([])
   const [executionOrder, setExecutionOrder] = useState([])
   const [selectedIndex, setSelectedIndex] = useState(0)
 
+
   const onSelect = (testCaseId) => {
-    setSelectedIndex(0)
-    reportClassService.getAll().then(returnedClassFiles => {
-      setClassFiles(returnedClassFiles.filter(classFile => classFile.testCaseId === testCaseId))
+    reportClassService.getReportClassByTestCase(testCaseId).then(returnedClassFiles => {
       testCaseService.getTestCase(testCaseId).then(returnedTestCase => {
+        setSelectedIndex(0)
+        setClassFiles(returnedClassFiles)
         setExecutionOrder(returnedTestCase.executionOrder)
       })
     })
@@ -54,10 +56,17 @@ const Visualization = () => {
     }
   }
 
+  useEffect(() => {
+    // This filtering is not ideal
+    testCaseService.getAll().then(returnedTestCases => {
+      setTestCases(returnedTestCases.filter(testCase => testCase.visualizationId === parseInt(visualizationId)))
+    })
+  }, [])
+
   return(
     <StyledPageContainer>
       <StyledDisplayContainer>
-        <TestDisplay visualizationId={visualizationId} onSelect={onSelect} onDelete={onDelete} />
+        <TestDisplay testCases={testCases} onSelect={onSelect} onDelete={onDelete} />
         <CodeDisplay classFiles={classFiles} executionData={executionOrder.length === 0 ? [] : executionOrder[selectedIndex]} onIndexChange={onIndexChange}/>
       </StyledDisplayContainer>
     </StyledPageContainer>

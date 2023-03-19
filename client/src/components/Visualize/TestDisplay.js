@@ -1,8 +1,5 @@
 import styled from 'styled-components'
-import { useState, useEffect } from 'react'
-
 import TestDisplayRow from './TestDisplayRow'
-import testCaseService from '../../services/testCase'
 
 const StyledButton = styled.button`
   font-size: 1.5rem;
@@ -25,19 +22,10 @@ const StyledTestDisplay = styled.div`
 `
 
 
-const TestDisplay = ({ visualizationId, onSelect, onDelete }) => {
-  const [testCases, setTestCases] = useState([])
-
+const TestDisplay = ({ onSelect, onDelete, testCases }) => {
   const onClick = () => {
     onDelete()
   }
-
-  useEffect(() => {
-    // This filtering is not ideal
-    testCaseService.getAll().then(returnedTestCases => {
-      setTestCases(returnedTestCases.filter(testCase => testCase.visualizationId === parseInt(visualizationId)))
-    })
-  }, [])
 
   return (
     <div className="d-flex justify-content-flex-start align-items-center flex-column">
