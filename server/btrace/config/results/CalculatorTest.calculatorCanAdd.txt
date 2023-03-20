@@ -1,6 +1,0 @@
-### BTrace Log: 3/19/23, 1:03 PM
-
-com.github.mvmcgrath.generator.source.Calculator 3
-
-com.github.mvmcgrath.generator.source.Calculator 5
-
