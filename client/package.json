@@ -3,43 +3,24 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.3.2",
+    "axios": "^1.7.4",
     "he": "^1.2.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
+    "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:ui": "cd ../server/backend/src/main/resources/static && rm -rf * && cd ../../../../../../client && npm run build && cp -r build/* ../server/backend/src/main/resources/static"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "eslint": "eslint './**/*.{js,jsx}'",
+    "build:ui": "cd ../server/backend/src/main/resources/static && rm -rf * && cd ../../../../../../client && npm run build && cp -r dist/* ../server/backend/src/main/resources/static"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "proxy": "http://localhost:8080"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
 }
